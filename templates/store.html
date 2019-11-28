@@ -39,13 +39,15 @@
 		To go back to the Homepage press <a href="/">here</a>
 
 	</h2>
+{%for product in Products %}
 <div class="card">
-  <img src="/static/wael.jpg" alt="Buy wael!" style="width:100%">
-  <h1>Wael Hashem's shirt</h1>
-  <p class="price">$0.0057</p>
-  <p>Last piece</p>
-  <p><button> <a href="/cart">Add to Cart</a></button></p>
+  <img src="{{product.picturelink}}" style="width:100%">
+  <h1>{{product.name}}</h1>
+  <p class="price">{{product.price}}</p>
+  <p>{{product.description}}</p>
+  <p><button> <a href="/cart">Add to Cart </a></button></p>
 </div> 
+{%endfor%}
 
 </body>
 </html>
