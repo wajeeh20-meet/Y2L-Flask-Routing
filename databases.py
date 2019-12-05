@@ -83,5 +83,5 @@ def query_all_cart():
 
 
 
-# add_product("wael's shirt", 0.57, "/static/wael.jpg", "you can buy wael's shirt for a limited time")
+# add_product("wael's jacket", 2, "/static/wael.jpg", "george's camera!!")
 

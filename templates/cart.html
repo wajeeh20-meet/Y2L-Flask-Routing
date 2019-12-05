@@ -7,13 +7,17 @@
 
 {%for Cart in carts %}
 
+
 <div class="card">
   <img src="{{Cart.picturelink}}" style="width:100%">
-  <h1>{{Cart.productID}}</h1>
-  
-  <p><button> <a href="/cart">Add to buy now</a></button></p>
+  <h1>{{Cart.name}}</h1>
+  <p class="price">{{Cart.price}}</p>
+  <p>{{Cart.description}}</p>
+
 </div> 
 {%endfor%}
+
+
 
 </body>
 </html>

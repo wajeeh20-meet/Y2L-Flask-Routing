@@ -21,9 +21,10 @@ def store():
 	return render_template("store.html", Products = products)
 
 
-@app.route("/cart")
-def cart():
-	carts = query_all_cart()
+@app.route("/cart/<productID>")
+def cart(productID):
+	
+	carts = query_by_id(productID)
 	
 	return render_template("cart.html", carts=carts)
 

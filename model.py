@@ -20,3 +20,4 @@ class Cart(Base):
 	__tablename__ = 'cart'
 	id = Column(Integer, primary_key=True)
 	productID = Column(Integer)
+	
